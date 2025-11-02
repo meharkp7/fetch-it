@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const Slider1()),
@@ -53,18 +53,18 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             Image.asset(
               "assets/images/heading.png",
-              height: 80,
-            ),
-            const SizedBox(height: 20),
-            Image.asset(
-              "assets/images/logo.png",
               height: 150,
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 5),
+            Image.asset(
+              "assets/images/logo.png",
+              height: 200,
+            ),
+            const SizedBox(height: 5),
             const Text(
               "Shop with ease and a pinch of peace",
               style: TextStyle(
-                fontSize: 32,
+                fontSize: 45,
                 fontWeight: FontWeight.bold,
                 color: Colors.deepPurple,
               ),

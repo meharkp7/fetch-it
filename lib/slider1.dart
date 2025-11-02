@@ -14,11 +14,11 @@ class Slider1 extends StatelessWidget {
             Align(
               alignment: Alignment.topLeft,
               child: Padding(
-                padding: const EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(5.0),
                 child: Image.asset(
                   'assets/images/logo.png',
-                  height: 30,
-                  width: 30,
+                  height: 50,
+                  width: 50,
                 ),
               ),
             ),
@@ -36,7 +36,7 @@ class Slider1 extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(4, (index) {
